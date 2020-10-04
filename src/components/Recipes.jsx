@@ -34,14 +34,24 @@ class Recipes extends Component {
   };
   render() {
     return (
-      <div>
+      <div className="recipe">
+        <h1>Search for a Recipe</h1>
         <form onSubmit={(e) => this.handleSubmit(e)}>
           <input
             name="search"
             placeholder="Find Recipe"
             onChange={(e) => this.handleChange(e)}
           />
-          <button>Search</button>
+          <button
+            style={{
+              margin: "10px",
+              borderRadius: "5px",
+              backgroundColor: "#4285f4",
+              color: "white",
+            }}
+          >
+            Search
+          </button>
         </form>
         {this.renderRecipes()}
       </div>

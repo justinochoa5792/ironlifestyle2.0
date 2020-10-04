@@ -4,7 +4,8 @@ import "../App.css";
 
 const Youtube = () => {
   return (
-    <div className="App">
+    <div className="video">
+      <h1 style={{ marginBottom: "50px" }}>Fitness Videos</h1>
       <ReactPlayer
         className="react-player"
         url="https://www.youtube.com/user/bodybuildingcomvideo"
