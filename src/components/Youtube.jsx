@@ -1,9 +1,15 @@
 import React from "react";
+import ReactPlayer from "react-player";
+import "../App.css";
 
 const Youtube = () => {
   return (
-    <div>
-      <h1>Youtube</h1>
+    <div className="App">
+      <ReactPlayer
+        className="react-player"
+        url="https://www.youtube.com/user/bodybuildingcomvideo"
+        controls="true"
+      />
     </div>
   );
 };
